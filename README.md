@@ -31,12 +31,11 @@ The following results show the genre categories that met our analysis criteria a
 10.) Sci-Fi : 5.44
 11.) Horror : 4.83
 
-![Image](images/Average Rating by Genre.png)
-
 CONCLUSION #1:
 
 The genre category 'Documentary' had the highest average rating of 7.29, while the category 'Horror" had the lowest average rating of 4.83.
 
+![Image](Images/Average Rating by Genre.png)
 
 ## 2
 
