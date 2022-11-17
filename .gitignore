@@ -1,0 +1,6 @@
+#ignoring all .csv, .tsv, and .db files
+*.csv
+*.tsv
+*.db
+*.DS_Store
+*.zip
