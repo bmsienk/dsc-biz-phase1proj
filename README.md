@@ -77,7 +77,7 @@ movies tend to have higher ratings. We then made a scatterplot of average
 rating by runtime in minutes to see if the trend was visually apparent. 
 This is what we found:
 
-![image1](images/final_project_graph_1.png)
+![image1](images/image1.png)
 
 As we can see, movies with shorter runtimes, in particular those under an 
 hour long, do seem to have higher ratings. Qualitatively, we can see that 
@@ -109,7 +109,7 @@ this dataset is -0.536, a moderate negative correlation.
 We plot one more time, and we can see that the graph has stayed largely 
 the same, if not identical.
 
-![image2](images/project_graph_2.png)
+![image2](images/image2.png)
 
 For context, we've made one final graph including the number of movies with each runtime. As we can see, the larger points in the scatterplot below correspond to movie runtime categories that have more movies of said runtime. Analyzing this, it is clear that there are significantly more movies with runtimes between 80 and 100 minutes than those with runtimes at the edges of the plot. That said, it is still worth noting that movies analyzed with a runtime around 60 minutes consistently rate higher than those with a runtime between 80 and 100 minutes. We also see a second peak in our distribution, with movies aroundf 120 minutes rating higher than those in the middle as well.
 
