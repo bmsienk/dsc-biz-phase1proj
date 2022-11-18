@@ -10,7 +10,7 @@ Microsoft is looking to get into the movie business and create an original conte
 
 3.) What affects does production budget have on important metrics such as total gross, popularity, and moving rating?
 
-Our data was sourced through Flatiron school and can be found here [ProjectData](https://github.com/learn-co-curriculum/dsc-project-template/tree/template-aab). The relevant data is located in the zippedData/ folder in the template-aab or template-mvp branch.
+Our data was sourced through Flatiron school and can be found here. [ProjectData](https://github.com/learn-co-curriculum/dsc-project-template/tree/template-aab/zippedData)
     
 # Data Preparation and Analysis
 
