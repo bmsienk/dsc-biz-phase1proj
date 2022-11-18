@@ -3,7 +3,9 @@
 Microsoft is looking to get into the movie business and create an original content studio. Our goal is to answer three questions we think are important considerations, and hopefully provide them with actionable insight and recommendations. The questions we considered are as follows:
 
 1.) Which movie genres receive the highest average ratings?
+
 2.) Does movie runtime have an impact on ratings?
+
 3.) What affects does production budget have on important metrics such as total gross, popularity, and moving rating?
     
 # Data Preparation and Analysis
