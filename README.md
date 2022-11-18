@@ -39,7 +39,87 @@ The genre category 'Documentary' had the highest average rating of 7.29, while t
 
 ![Image](images/Average_Rating_by_Genre.png)
 
-## 2
+**Analysis of Movie Runtime Vs Average Rating**
+
+The question this section sought answer was whether there exists a 
+relationship between runtime in minutes and movie rating, and whether we 
+can give an actionable recommendation to Microsoft executives based on our 
+findings. Perhaps they can optimize their movie runtimes to yield better 
+ratings.
+
+For this analysis, we used the IMDB data located in the SQLLite database. 
+We started with the same query as the previous question, joining the 
+movie_basics and movie_ratings tables in order to compare runtime in 
+minutes to average ratings. By joining these two tables, we have access to 
+all the relevant features.
+
+Initially, there were a number of records with null values for runtime in 
+the dataframe equating to 10% of our total data. We agreed that, while 
+toeing the line for what is an acceptable amount of data to drop, dropping 
+the null values would still be the best course of action. We did not want 
+to fill them with the mean or median to avoid skewing our data towards the 
+center.
+
+The next step in the cleaning process was to filter out the outliers. 
+Based on accepted definitions, we considered outliers anything above the 
+outer bounds of the IQR plus 1.5 times the IQR. We then decided to make a 
+new dataframe by adjusting our SQL query. We filtered our query to only 
+include movies with runtimes within our established range of outliers. 
+Furthermore, we grouped our records by runtime and took the average of 
+average ratings, giving us the average rating for a movie of each unique 
+runtime. This would allow us to better explore the relationship between 
+features.
+
+We calculated the correlation between runtime in minutes and average movie 
+rating for our new dataframe, and found a correlation of -0.536, a 
+moderate negative correlation. This would seem to suggest that shorter 
+movies tend to have higher ratings. We then made a scatterplot of average 
+rating by runtime in minutes to see if the trend was visually apparent. 
+This is what we found:
+
+![image1](images/final_project_graph_1.png)
+
+As we can see, movies with shorter runtimes, in particular those under an 
+hour long, do seem to have higher ratings. Qualitatively, we can see that 
+ratings steadily decrease until bottoming out around 80-100 minutes, after 
+which they steadily increase once more until stabilizing around 120 
+minutes.
+
+However, we need to consider that the points in this scatter plot are not 
+weighed evenly - indeed, some runtime categories may have very few movies 
+of that length, which could also skew our data. We hopefully took care of 
+some of this by filtering to remove our outliers, but perhaps we can get 
+more granular with our data restriction.
+
+In order to do this, we made a new dataframe from a new SQL query where 
+the count of runtime_minutes is included as a factor. This way, we can 
+prevent the inclusion of movie runtime categories that only have a very 
+small amount of movies in the category (i.e. amount of movies with a 
+specific runtime) which could potentially be skewing our data. We chose to 
+limit the data to movie runtimes with over 100 movies that have that 
+particular runtime, based on the accepted definition of a valid sample 
+size according to tools4dev.org.
+
+We then took another look at the correlation between runtime and average 
+rating, and we can see that it has stayed the same upon adding that 
+further restriction to our dataframe. We can now confidently say that the 
+correlation between runtime in minutes and average rating for movies in 
+this dataset is -0.536, a moderate negative correlation.
+
+We plot one more time, and we can see that the graph has stayed largely 
+the same, if not identical.
+
+![image2](images/project_graph_2.png)
+
+For context, we've made one final graph including the number of movies with each runtime. As we can see, the larger points in the scatterplot below correspond to movie runtime categories that have more movies of said runtime. Analyzing this, it is clear that there are significantly more movies with runtimes between 80 and 100 minutes than those with runtimes at the edges of the plot. That said, it is still worth noting that movies analyzed with a runtime around 60 minutes consistently rate higher than those with a runtime between 80 and 100 minutes. We also see a second peak in our distribution, with movies aroundf 120 minutes rating higher than those in the middle as well.
+
+![image3](images/image3.png)
+
+Conclusion:
+Taking this data into consideration, we can offer a recommendation to 
+Microsoft that producing shorter movies under 60 minutes are most likely 
+to be received positively. However, producing movies around 120 minutes 
+are possibly more well received than those between 80 and 100 minutes.  
 
 ## Comparison with Budget and Gross
 
