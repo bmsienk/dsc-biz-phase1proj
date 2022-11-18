@@ -1,3 +1,5 @@
+![Movie Theatre](images/Movies.jpg)
+
 # Overview
 
 Microsoft is looking to get into the movie business and create an original content studio. Our goal is to answer three questions we think are important considerations, and hopefully provide them with actionable insight and recommendations. The questions we considered are as follows:
