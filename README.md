@@ -37,7 +37,7 @@ CONCLUSION #1:
 
 The genre category 'Documentary' had the highest average rating of 7.29, while the category 'Horror" had the lowest average rating of 4.83. Genre is an important factor to consider when determining which types of movies to make and how well they might be received by viewers.
 
-![Image](Images/Average_Rating_by_Genre.png)
+![Image](Images/Average Rating by Genre.png)
 
 ## 2
 
