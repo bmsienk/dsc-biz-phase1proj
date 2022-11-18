@@ -1,9 +1,10 @@
 # Overview
 
 Microsoft is looking to get into the movie business and create an original content studio. Our goal is to answer three questions we think are important considerations, and hopefully provide them with actionable insight and recommendations. The questions we considered are as follows:
-    1.) Which movie genres receive the highest average ratings?
-    2.) Does movie runtime have an impact on ratings?
-    3.) What affects does production budget have on important metrics such as total gross, popularity, and moving rating?
+
+1.) Which movie genres receive the highest average ratings?
+2.) Does movie runtime have an impact on ratings?
+3.) What affects does production budget have on important metrics such as total gross, popularity, and moving rating?
     
 # Data Preparation and Analysis
 
@@ -88,10 +89,10 @@ Moving on to the Numbers dataset, the questions that come to mind are, "Does pro
 
 The purpose of this study is to make recommendations for Microsoft's entry into the movie industry. We sought to answer questions about various movie metrics and have come to the following conclusions:
 
-    An analysis of genre and average ratings showed that documentaries receive the highest average rating while horror movies receive the lowest average rating.
+An analysis of genre and average ratings showed that documentaries receive the highest average rating while horror movies receive the lowest average rating.
     
-    An analysis of runtimes and ratings showed that movies less than 60 minutes long as well as around the 120-minute mark have higher average ratings.
-    
-    An analysis of the production budget and various metrics found that the production budget has a strong positive relationship with domestic and worldwide gross and     production budget has a moderate positive relationship with overall popularity, represented by the number of rating votes for a movie.
+An analysis of runtimes and ratings showed that movies less than 60 minutes long as well as around the 120-minute mark have higher average ratings.
+
+An analysis of the production budget and various metrics found that the production budget has a strong positive relationship with domestic and worldwide gross and     production budget has a moderate positive relationship with overall popularity, represented by the number of rating votes for a movie.
     
 From the above conclusions, it appears that making documentaries around 60 minutes or 120 minutes will yield the highest ratings. This will build the popularity of the studio as they will have a high probability of releasing well-received movies. In addition, a moderate to high production budget will further increase popularity and will also allow for a higher total gross. One limitation of this study is that there was no available data for distribution and advertising costs. Due to this limitation, we cannot recommend based on expected profits and cannot recommend whether to expand into a global market, as there is no data involving the associated costs in doing so and if they outweigh the additional profits. Another limitation of this study was that, due to time constraints, crossover movies, movies with more than one genre, were not considered. A recommended follow-up study would contain data on the distribution and advertising costs as well as an analysis including crossover movies.
